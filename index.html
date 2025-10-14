@@ -257,12 +257,25 @@
                     </li>
                 </ul>
 
-                <form action="#" class="contact-form">
-                    <input type="text" class="form-input" placeholder="Your Name" 
+                <form class="contact-form" action="https://formsubmit.co/orisajopreciousanuoluwa@gmail.com" method="POST">
+
+                    <!--  Optional security: disable captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Optional: redirect to a Thank You page after submission -->
+                <input type="hidden" name="_next" value="https://https://precious565-lab.github.io/Latte-Vibes//thankyou.html">
+
+
+                    <input type="text" class="form-input" placeholder="Full Name" name="name"
                     required>
-                    <input type="email" class="form-input" placeholder="Your Email" 
+                    <input type="email" class="form-input" placeholder="Email" name="email"
                     required>
-                    <textarea placeholder=" Your Message"  class="form-input" required></textarea>
+                    <input type="text" name="Phone number" placeholder="Phone Number" class="form-input"
+                    required>
+                    <input type="password" name="password" placeholder="Password" class="form-input" 
+                    required>
+                    <textarea class="form-input" name="message" placeholder="Write your message..."
+                    required></textarea>
                     <button class="submit-button">Submit</button>
                 </form>
             </div>
@@ -305,5 +318,4 @@
 <!--Linking custom script-->
 <script src="script.js"></script>
 </body>
-
 </html>  
